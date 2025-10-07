@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leadership - Madison Ammirati</title>
+  <title>Leadership Experience - Madison Ammirati</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       background: #02002F;
       color: white;
-      font-family: Inter, sans-serif;
-      text-align: center;
+      font-family: "Inter", sans-serif;
       overflow-x: hidden;
+      overflow-y: auto;
     }
+
     header {
       position: fixed;
       top: 0;
@@ -22,8 +23,10 @@
       background: #080300;
       border-bottom: 1px solid white;
       padding: 20px 0;
+      text-align: center;
       z-index: 1000;
     }
+
     nav a {
       color: white;
       text-decoration: none;
@@ -32,17 +35,21 @@
       font-size: 18px;
       transition: color 0.2s ease;
     }
+
     nav a:hover {
       color: #ddd;
       text-decoration: underline;
     }
+
     main {
       margin-top: 120px;
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 40px 20px 80px;
+      max-width: 1100px;
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
     }
+
     h1 {
       margin-bottom: 50px;
       font-size: 40px;
@@ -50,28 +57,57 @@
       display: inline-block;
       padding-bottom: 8px;
     }
+
     .card {
       background: linear-gradient(180deg, #0E0202 0%, #07017E 100%);
       border-radius: 12px;
       padding: 30px;
       margin-bottom: 50px;
       box-shadow: 0 0 15px rgba(255,255,255,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(255,255,255,0.2);
+    }
+
     .card h3 {
       font-size: 26px;
       margin-bottom: 10px;
     }
+
     .card p {
       font-size: 18px;
       line-height: 1.6;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto 10px;
     }
+
     .card img {
       display: block;
       margin: 30px auto 10px;
       max-width: 200px;
       border-radius: 8px;
+    }
+
+    footer {
+      background: #0E0202;
+      border-top: 1px solid #080300;
+      padding: 40px 0;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .card img {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
@@ -88,26 +124,33 @@
   <main>
     <h1>Leadership Experience</h1>
 
+    <!-- IDEAs Entrepreneurship Club -->
     <div class="card">
       <h3>IDEAs Entrepreneurship Club</h3>
       <p><strong>System Architect</strong></p>
-      <p>Organized events boosting membership by 5% and supported executive board growth through recruitment and team coordination. Managed meetings and logistics to enhance campus leadership in technology.</p>
+      <p>Judged for SJ Hacks with 30+ applications, organized events that boosted membership by 5%, and supported executive board growth through recruitment, interviews, and team coordination. Managed meetings, event logistics, and budgeting to strengthen campus leadership in technology and entrepreneurship.</p>
       <img src="images/ideas.png" alt="IDEAs Club logo">
     </div>
 
+    <!-- Responsible Computing Club -->
     <div class="card">
       <h3>Responsible Computing Club</h3>
       <p><strong>Lead Industry Mozilla Ambassador</strong></p>
-      <p>Led initiatives to promote responsible computing and ethical technology use by planning and executing 7+ events each semester. Managed a team of 4 to coordinate speaker events and workshops with industry professionals.</p>
+      <p>Led initiatives to promote responsible computing and ethical technology use by planning and executing 7+ events each semester. Collaborated with campus organizations to expand outreach, and managed a team of 4 to coordinate speaker events and workshops with industry professionals that provided students with career insights and professional development opportunities.</p>
       <img src="images/RCC.png" alt="Responsible Computing Club logo">
     </div>
 
+    <!-- Firefox Student Ambassador -->
     <div class="card">
       <h3>Firefox Student Ambassador</h3>
       <p><strong>Student Ambassador</strong></p>
-      <p>Helped launch the Firefox Student Ambassador program on campus. Built brand presence through creative events, website design, and community outreach.</p>
+      <p>Helped launch the first Firefox Student Ambassador program on campus, building brand presence through creative events and outreach. Designed a compliant website in coordination with Mozilla’s legal team and organized initiatives such as case competitions, themed promotions, and giveaways to increase awareness and student engagement.</p>
       <img src="images/FireFox.png" alt="Firefox logo">
     </div>
   </main>
+
+  <footer>
+    <p>© 2025 Madison Ammirati Portfolio</p>
+  </footer>
 </body>
 </html>
