@@ -6,12 +6,17 @@
   <title>Leadership - Madison Ammirati</title>
   <style>
     html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
       margin: 0;
-      padding: 0;
       background: #02002F;
       color: white;
       font-family: "Inter", sans-serif;
-      overflow-x: hidden;
+    }
+
+    main {
+      flex: 1;
     }
 
     header {
@@ -48,46 +53,19 @@
       text-align: center;
     }
 
-    h1 {
-      font-size: 40px;
-      border-bottom: 2px solid white;
-      display: inline-block;
-      padding-bottom: 8px;
-      margin-bottom: 50px;
-    }
-
     .card {
       background: linear-gradient(180deg, #0E0202 0%, #07017E 100%);
       border-radius: 12px;
       padding: 30px;
       margin-bottom: 50px;
       box-shadow: 0 0 15px rgba(255,255,255,0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 25px rgba(255,255,255,0.2);
-    }
-
-    .card h3 {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 18px;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 0 auto 10px;
     }
 
     .card img {
       display: block;
-      margin: 30px auto 10px;
-      max-width: 200px;
+      margin: 30px auto;
       border-radius: 8px;
-      box-shadow: 0 0 12px rgba(255,255,255,0.1);
+      max-width: 200px;
     }
 
     footer {
@@ -96,12 +74,7 @@
       text-align: center;
       padding: 25px 0;
       border-top: 1px solid #080300;
-      width: 100%;
-      position: relative;
-      bottom: 0;
-      left: 0;
       font-size: 16px;
-      margin-top: 60px;
     }
 
     footer p {
