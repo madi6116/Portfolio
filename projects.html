@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - Madison Ammirati</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       background: #02002F;
       color: white;
       font-family: "Inter", sans-serif;
-      text-align: center;
       overflow-x: hidden;
+      overflow-y: auto;
     }
 
     header {
@@ -23,6 +23,7 @@
       background: #080300;
       border-bottom: 1px solid white;
       padding: 20px 0;
+      text-align: center;
       z-index: 1000;
     }
 
@@ -46,28 +47,23 @@
       max-width: 1100px;
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
     }
 
     h1 {
-      margin-bottom: 50px;
       font-size: 40px;
       border-bottom: 2px solid white;
       display: inline-block;
       padding-bottom: 8px;
-    }
-
-    .projects-container {
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
+      margin-bottom: 50px;
     }
 
     .card {
       background: linear-gradient(180deg, #0E0202 0%, #07017E 100%);
       border-radius: 12px;
       padding: 30px;
+      margin-bottom: 50px;
       box-shadow: 0 0 15px rgba(255,255,255,0.1);
-      text-align: center;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -100,17 +96,12 @@
       border-top: 1px solid #080300;
       padding: 40px 0;
       margin-top: 50px;
+      text-align: center;
     }
 
     footer p {
       font-size: 16px;
       color: #aaa;
-    }
-
-    @media (max-width: 768px) {
-      .card img {
-        max-width: 90%;
-      }
     }
   </style>
 </head>
@@ -127,28 +118,28 @@
   <main>
     <h1>Projects</h1>
 
-    <div class="projects-container">
-      <!-- EPA ESA Web App -->
-      <div class="card">
-        <h3>EPA ESA Web App</h3>
-        <p><strong>User Research Lead</strong></p>
-        <p>Led user research for a 3-person team during a summer internship to design a centralized web platform that helps farmers identify pesticide options based on region and regulations. Created an interactive Figma prototype, iterated through user feedback, and supported development with React Native and JavaScript to bridge design and implementation.</p>
-      </div>
+    <!-- EPA ESA Web App -->
+    <div class="card">
+      <h3>EPA ESA Web App</h3>
+      <p><strong>User Research Lead</strong></p>
+      <p>Led user research for a 3-person team during a summer internship to design a centralized web platform that helps farmers identify pesticide options based on region and regulations. Created an interactive Figma prototype, iterated through user feedback, and supported development with React Native and JavaScript to bridge design and implementation.</p>
+      <img src="images/EPA.png" alt="EPA ESA Web App Screenshot">
+    </div>
 
-      <!-- Reef Guardian Game -->
-      <div class="card">
-        <h3>Reef Guardian Game</h3>
-        <p><strong>System Architect</strong></p>
-        <p>Worked on a 5-person team to design and develop a Java side-scroller game. Served as system architect by creating UML diagrams and flowcharts, and contributed to gameplay logic, debugging, and optimization, blending technical work with narrative-driven design.</p>
-        <img src="images/reefgame.png" alt="Reef Guardian Game">
-      </div>
+    <!-- Reef Guardian Game -->
+    <div class="card">
+      <h3>Reef Guardian Game</h3>
+      <p><strong>System Architect</strong></p>
+      <p>Worked on a 5-person team to design and develop a Java side-scroller game. Served as system architect by creating UML diagrams and flowcharts, and contributed to gameplay logic, debugging, and optimization, blending technical work with narrative-driven design.</p>
+      <img src="images/reefgame.png" alt="Reef Guardian Game Screenshot">
+    </div>
 
-      <!-- Engineering Labs -->
-      <div class="card">
-        <h3>Engineering Labs</h3>
-        <p><strong>Developer</strong></p>
-        <p>Developed advanced Java applications through 12+ labs, gaining hands-on experience with object-oriented programming, data structures, debugging, and core concepts like inheritance, polymorphism, and encapsulation.</p>
-      </div>
+    <!-- Engineering Labs -->
+    <div class="card">
+      <h3>Engineering Labs</h3>
+      <p><strong>Developer</strong></p>
+      <p>Developed advanced Java applications through 12+ labs, gaining hands-on experience with object-oriented programming, data structures, debugging, and core concepts like inheritance, polymorphism, and encapsulation.</p>
+      <img src="images/SJSU.png" alt="SJSU Engineering Labs Screenshot">
     </div>
   </main>
 
