@@ -38,20 +38,47 @@
       margin-left: auto;
       margin-right: auto;
     }
-    img {
-      max-width: 100%;
+    section {
+      margin-bottom: 80px;
+    }
+    /* Banner section with overlay */
+    .banner-container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .banner-container img {
+      width: 100%;
       height: auto;
       display: block;
-      margin: 30px auto;
-      border-radius: 8px;
+      border-radius: 0;
+    }
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+    .banner-text h1 {
+      font-size: 60px;
+      font-family: 'Roboto Mono', monospace;
+      margin: 0;
+    }
+    .banner-text p {
+      font-size: 20px;
+      margin-top: 10px;
     }
     .headshot {
       width: 244px;
       border-radius: 50%;
       margin-top: 20px;
-    }
-    section {
-      margin-bottom: 80px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
@@ -64,9 +91,13 @@
   </header>
 
   <main>
-    <section style="text-align:center;">
-      <h1 style="font-size: 64px; font-family: 'Roboto Mono', monospace;">Madison Ammirati Portfolio</h1>
-      <img src="images/banner.png" alt="Banner with beach and sun">
+    <!-- Banner with overlay text -->
+    <section class="banner-container">
+      <img src="images/banner.png" alt="Banner background image">
+      <div class="banner-text">
+        <h1>Madison Ammirati</h1>
+        <p>Software Engineer | Designer | Innovator</p>
+      </div>
     </section>
 
     <section style="text-align:center;">
