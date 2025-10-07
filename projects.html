@@ -13,11 +13,10 @@
       background: #02002F;
       color: white;
       font-family: "Inter", sans-serif;
+      overflow-x: hidden;
     }
 
-    main {
-      flex: 1;
-    }
+    main { flex: 1; }
 
     header {
       position: fixed;
@@ -39,10 +38,7 @@
       font-size: 18px;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-      color: #dcdcdc;
-    }
+    nav a:hover { text-decoration: underline; color: #dcdcdc; }
 
     main {
       margin-top: 120px;
@@ -65,6 +61,7 @@
       display: block;
       margin: 30px auto;
       border-radius: 8px;
+      max-width: 90%;
     }
 
     footer {
@@ -76,10 +73,27 @@
       font-size: 16px;
     }
 
-    footer p {
-      margin: 0;
-      color: #bfbfbf;
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 10px;
     }
+
+    .footer-icons svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+      transition: transform 0.2s ease, fill 0.2s ease;
+    }
+
+    .footer-icons svg:hover {
+      transform: scale(1.2);
+      fill: #9f9fff;
+    }
+
+    footer p { margin: 0; color: #bfbfbf; }
   </style>
 </head>
 <body>
@@ -99,7 +113,7 @@
       <h3>EPA ESA Web App</h3>
       <p><strong>User Research Lead</strong></p>
       <p>Led user research for a 3-person team during a summer internship to design a centralized web platform that helps farmers identify pesticide options based on region and regulations. Created an interactive Figma prototype, iterated through user feedback, and supported development with React Native and JavaScript to bridge design and implementation.</p>
-      <img src="images/EPA.png" alt="EPA ESA Web App Screenshot" width="250">
+      <img src="images/EPA.png" alt="EPA ESA Web App Screenshot">
     </div>
 
     <div class="card">
@@ -113,11 +127,22 @@
       <h3>Engineering Labs</h3>
       <p><strong>Developer</strong></p>
       <p>Developed advanced Java applications through 12+ labs, gaining hands-on experience with object-oriented programming, data structures, debugging, and core concepts like inheritance, polymorphism, and encapsulation.</p>
-      <img src="images/SJSU.png" alt="SJSU Engineering Labs Screenshot" width="300">
+      <img src="images/SJSU.png" alt="SJSU Engineering Labs Screenshot">
     </div>
   </main>
 
   <footer>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/madison-ammirati/" target="_blank" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4zM8 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.66 4.78 6.1V24h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.7-2.54 3.5V24h-4z"/></svg>
+      </a>
+      <a href="https://github.com/madi6116" target="_blank" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.55v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.52-1.3-1.27-1.65-1.27-1.65-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.25.72-1.54-2.56-.29-5.26-1.28-5.26-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.52-1.45.11-3.03 0 0 .97-.31 3.18 1.18a10.94 10.94 0 012.9-.39c.98 0 1.97.13 2.9.39 2.2-1.5 3.17-1.18 3.17-1.18.64 1.58.24 2.74.12 3.03.74.81 1.18 1.83 1.18 3.09 0 4.41-2.71 5.38-5.29 5.67.41.36.77 1.1.77 2.23v3.3c0 .3.21.66.8.55A10.52 10.52 0 0023.5 12c0-6.28-5.23-11.5-11.5-11.5z"/></svg>
+      </a>
+      <a href="mailto:madison.ammirati@gmail.com" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13.065L.5 6V4l11.5 7 11.5-7v2z"/><path d="M0 6v14h24V6l-12 7L0 6z"/></svg>
+      </a>
+    </div>
     <p>© 2025 Madison Ammirati | Portfolio</p>
   </footer>
 </body>
