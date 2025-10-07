@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    overflow-x: hidden;
-  }
-  div {
-    position: relative;
-    min-height: 100vh;
-  }
-</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Madison Ammirati</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #02002F;
+      font-family: Inter, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #080300;
+      border-bottom: 1px solid white;
+      padding: 20px 40px;
+      z-index: 1000;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 24px;
+    }
+    a:hover { text-decoration: underline; }
+    main {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    form {
+      background: white;
+      color: black;
+      padding: 24px;
+      border-radius: 8px;
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+    button {
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #444;
+    }
+  </style>
 </head>
-<body style="margin:0;">
-<div style="width: 100%; position: relative; background: #02002F; min-height: 100vh; overflow: hidden;">
-  <!-- Navigation -->
-  <div style="width: 1440px; height: 81px; padding: 32px; position: absolute; top: 0; background: #080300; border-bottom: 1px white solid; display: flex; align-items: center; gap: 24px;">
-    <a href="index.html" style="color: white; font-size: 22px; text-decoration:none;">Home</a>
-    <a href="leadership.html" style="color: white; font-size: 22px; text-decoration:none;">Leadership Experience</a>
-    <a href="projects.html" style="color: white; font-size: 22px; text-decoration:none;">Projects</a>
-    <a href="contact.html" style="color: white; font-size: 22px; text-decoration:none;">Contact</a>
-  </div>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="leadership.html">Leadership Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </header>
 
-  <!-- Contact Form -->
-  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 150px;">
-    <h1 style="color: white; font-size: 72px; font-family: Inter;">Email Me</h1>
-    <form action="https://formspree.io/f/xblzagyy" method="POST" style="display: flex; flex-direction: column; gap: 16px; background: white; padding: 24px; border-radius: 8px; width: 320px;">
-      <label>Name</label>
-      <input type="text" name="name" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+  <main>
+    <h1>Email Me</h1>
+    <form action="https://formspree.io/f/xblzagyy" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" required>
 
-      <label>Email</label>
-      <input type="email" name="_replyto" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+      <label>Email:</label>
+      <input type="email" name="_replyto" required>
 
-      <label>Message</label>
-      <textarea name="message" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;"></textarea>
+      <label>Message:</label>
+      <textarea name="message" required></textarea>
 
-      <button type="submit" style="padding: 10px; background: #222; color: white; border: none; border-radius: 4px; cursor: pointer;">Send</button>
+      <button type="submit">Send</button>
     </form>
-  </div>
-</div>
+  </main>
 </body>
 </html>
