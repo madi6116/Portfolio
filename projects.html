@@ -12,7 +12,6 @@
       color: white;
       font-family: "Inter", sans-serif;
       overflow-x: hidden;
-      overflow-y: auto;
     }
 
     header {
@@ -33,12 +32,11 @@
       font-weight: 600;
       margin: 0 20px;
       font-size: 18px;
-      transition: color 0.2s ease;
     }
 
     nav a:hover {
-      color: #ddd;
       text-decoration: underline;
+      color: #dcdcdc;
     }
 
     main {
@@ -58,100 +56,69 @@
       margin-bottom: 50px;
     }
 
-    .projects-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-    }
-
     .card {
       background: linear-gradient(180deg, #0E0202 0%, #07017E 100%);
       border-radius: 12px;
-      padding: 30px 25px;
-      width: 340px;
+      padding: 30px;
+      margin-bottom: 50px;
       box-shadow: 0 0 15px rgba(255,255,255,0.1);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
     .card:hover {
-      transform: scale(1.03);
+      transform: scale(1.02);
       box-shadow: 0 0 25px rgba(255,255,255,0.2);
-    }
-
-    .card h3 {
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      font-size: 17px;
-      line-height: 1.6;
-      margin: 6px auto;
-      max-width: 90%;
-    }
-
-    .card strong {
-      display: block;
-      margin-top: 6px;
     }
 
     .card img {
       display: block;
-      margin: 25px auto 10px;
+      margin: 30px auto 10px;
       border-radius: 8px;
       box-shadow: 0 0 12px rgba(255,255,255,0.1);
-      transition: transform 0.3s ease;
     }
 
-    .card img:hover {
-      transform: scale(1.05);
+    .card h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
     }
 
-    /* Individual image size tweaks */
+    .card p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto 10px;
+    }
+
     .card img.epa {
       width: 250px;
-      height: auto;
     }
 
     .card img.reef {
       width: 700px;
       max-width: 90%;
-      height: auto;
     }
 
     .card img.sjsu {
       width: 300px;
-      height: auto;
     }
 
     footer {
       background: #0E0202;
-      border-top: 1px solid #080300;
-      padding: 40px 0;
-      margin-top: 50px;
+      color: white;
       text-align: center;
+      padding: 25px 0;
+      border-top: 1px solid #080300;
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      font-size: 16px;
+      margin-top: 60px;
     }
 
     footer p {
-      font-size: 16px;
-      color: #aaa;
-    }
-
-    @media (max-width: 900px) {
-      .projects-grid {
-        flex-direction: column;
-        align-items: center;
-      }
-      .card {
-        width: 90%;
-      }
-      .card img.reef {
-        width: 100%;
-      }
+      margin: 0;
+      color: #bfbfbf;
     }
   </style>
 </head>
@@ -168,35 +135,30 @@
   <main>
     <h1>Projects</h1>
 
-    <div class="projects-grid">
-      <!-- EPA ESA Web App -->
-      <div class="card">
-        <h3>EPA ESA Web App</h3>
-        <p><strong>User Research Lead</strong></p>
-        <p>Led user research for a 3-person team during a summer internship to design a centralized web platform that helps farmers identify pesticide options based on region and regulations. Created an interactive Figma prototype, iterated through user feedback, and supported development with React Native and JavaScript to bridge design and implementation.</p>
-        <img src="images/EPA.png" alt="EPA ESA Web App Screenshot" class="epa">
-      </div>
+    <div class="card">
+      <h3>EPA ESA Web App</h3>
+      <p><strong>User Research Lead</strong></p>
+      <p>Led user research for a 3-person team during a summer internship to design a centralized web platform that helps farmers identify pesticide options based on region and regulations. Created an interactive Figma prototype, iterated through user feedback, and supported development with React Native and JavaScript to bridge design and implementation.</p>
+      <img src="images/EPA.png" alt="EPA ESA Web App" class="epa">
+    </div>
 
-      <!-- Reef Guardian Game -->
-      <div class="card" style="width: 100%;">
-        <h3>Reef Guardian Game</h3>
-        <p><strong>System Architect</strong></p>
-        <p>Worked on a 5-person team to design and develop a Java side-scroller game. Served as system architect by creating UML diagrams and flowcharts, and contributed to gameplay logic, debugging, and optimization, blending technical work with narrative-driven design.</p>
-        <img src="images/reefgame.png" alt="Reef Guardian Game Screenshot" class="reef">
-      </div>
+    <div class="card">
+      <h3>Reef Guardian Game</h3>
+      <p><strong>System Architect</strong></p>
+      <p>Worked on a 5-person team to design and develop a Java side-scroller game. Served as system architect by creating UML diagrams and flowcharts, and contributed to gameplay logic, debugging, and optimization, blending technical work with narrative-driven design.</p>
+      <img src="images/reefgame.png" alt="Reef Guardian Game" class="reef">
+    </div>
 
-      <!-- Engineering Labs -->
-      <div class="card">
-        <h3>Engineering Labs</h3>
-        <p><strong>Developer</strong></p>
-        <p>Developed advanced Java applications through 12+ labs, gaining hands-on experience with object-oriented programming, data structures, debugging, and core concepts like inheritance, polymorphism, and encapsulation.</p>
-        <img src="images/SJSU.png" alt="SJSU Engineering Labs Screenshot" class="sjsu">
-      </div>
+    <div class="card">
+      <h3>Engineering Labs</h3>
+      <p><strong>Developer</strong></p>
+      <p>Developed advanced Java applications through 12+ labs, gaining hands-on experience with object-oriented programming, data structures, debugging, and core concepts like inheritance, polymorphism, and encapsulation.</p>
+      <img src="images/SJSU.png" alt="SJSU Engineering Labs" class="sjsu">
     </div>
   </main>
 
   <footer>
-    <p>© 2025 Madison Ammirati Portfolio</p>
+    <p>© 2025 Madison Ammirati | Portfolio</p>
   </footer>
 </body>
 </html>
