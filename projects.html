@@ -87,8 +87,25 @@
     .card img {
       display: block;
       margin: 30px auto 10px;
-      max-width: 400px;
       border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Individual image sizes */
+    .card img.epa {
+      max-width: 400px;
+    }
+
+    .card img.reef {
+      max-width: 460px; /* slightly larger for proportional balance */
+    }
+
+    .card img.sjsu {
+      max-width: 400px;
     }
 
     footer {
@@ -102,6 +119,12 @@
     footer p {
       font-size: 16px;
       color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .card img.epa, .card img.reef, .card img.sjsu {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
@@ -123,7 +146,7 @@
       <h3>EPA ESA Web App</h3>
       <p><strong>User Research Lead</strong></p>
       <p>Led user research for a 3-person team during a summer internship to design a centralized web platform that helps farmers identify pesticide options based on region and regulations. Created an interactive Figma prototype, iterated through user feedback, and supported development with React Native and JavaScript to bridge design and implementation.</p>
-      <img src="images/EPA.png" alt="EPA ESA Web App Screenshot">
+      <img src="images/EPA.png" alt="EPA ESA Web App Screenshot" class="epa">
     </div>
 
     <!-- Reef Guardian Game -->
@@ -131,7 +154,7 @@
       <h3>Reef Guardian Game</h3>
       <p><strong>System Architect</strong></p>
       <p>Worked on a 5-person team to design and develop a Java side-scroller game. Served as system architect by creating UML diagrams and flowcharts, and contributed to gameplay logic, debugging, and optimization, blending technical work with narrative-driven design.</p>
-      <img src="images/reefgame.png" alt="Reef Guardian Game Screenshot">
+      <img src="images/reefgame.png" alt="Reef Guardian Game Screenshot" class="reef">
     </div>
 
     <!-- Engineering Labs -->
@@ -139,7 +162,7 @@
       <h3>Engineering Labs</h3>
       <p><strong>Developer</strong></p>
       <p>Developed advanced Java applications through 12+ labs, gaining hands-on experience with object-oriented programming, data structures, debugging, and core concepts like inheritance, polymorphism, and encapsulation.</p>
-      <img src="images/SJSU.png" alt="SJSU Engineering Labs Screenshot">
+      <img src="images/SJSU.png" alt="SJSU Engineering Labs Screenshot" class="sjsu">
     </div>
   </main>
 
