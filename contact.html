@@ -9,11 +9,11 @@
       margin: 0;
       padding: 0;
       background: #02002F;
-      font-family: Inter, sans-serif;
       color: white;
+      font-family: "Inter", sans-serif;
       overflow-x: hidden;
-      overflow-y: auto;
     }
+
     header {
       position: fixed;
       top: 0;
@@ -21,39 +21,70 @@
       width: 100%;
       background: #080300;
       border-bottom: 1px solid white;
-      padding: 20px 40px;
+      padding: 20px 0;
+      text-align: center;
       z-index: 1000;
     }
-    a {
+
+    nav a {
       color: white;
       text-decoration: none;
       font-weight: 600;
-      margin-right: 24px;
+      margin: 0 20px;
+      font-size: 18px;
     }
-    a:hover { text-decoration: underline; }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #dcdcdc;
+    }
+
     main {
-      margin-top: 150px;
+      margin-top: 140px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 40px 20px;
     }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
     form {
       background: white;
       color: black;
-      padding: 24px;
-      border-radius: 8px;
+      padding: 30px;
+      border-radius: 10px;
       width: 320px;
       display: flex;
       flex-direction: column;
       gap: 16px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
     }
+
+    label {
+      font-weight: 600;
+      color: #1E1E1E;
+    }
+
     input, textarea {
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 4px;
       width: 100%;
+      font-size: 16px;
     }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
     button {
       background: #222;
       color: white;
@@ -61,34 +92,62 @@
       border-radius: 4px;
       padding: 10px;
       cursor: pointer;
+      font-size: 16px;
+      transition: background 0.2s ease;
     }
+
     button:hover {
       background: #444;
+    }
+
+    footer {
+      background: #0E0202;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      border-top: 1px solid #080300;
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      font-size: 16px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin: 0;
+      color: #bfbfbf;
     }
   </style>
 </head>
 <body>
   <header>
-    <a href="index.html">Home</a>
-    <a href="leadership.html">Leadership Experience</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <h1>Email Me</h1>
+    <h1>Contact Me</h1>
     <form action="https://formspree.io/f/xblzagyy" method="POST">
-      <label>Name:</label>
-      <input type="text" name="name" required>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
 
-      <label>Email:</label>
-      <input type="email" name="_replyto" required>
+      <label for="email">Email:</label>
+      <input type="email" name="_replyto" id="email" required>
 
-      <label>Message:</label>
-      <textarea name="message" required></textarea>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" required></textarea>
 
-      <button type="submit">Send</button>
+      <button type="submit">Send Message</button>
     </form>
   </main>
+
+  <footer>
+    <p>© 2025 Madison Ammirati | Portfolio</p>
+  </footer>
 </body>
 </html>
