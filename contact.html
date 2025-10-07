@@ -6,12 +6,17 @@
   <title>Contact - Madison Ammirati</title>
   <style>
     html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
       margin: 0;
-      padding: 0;
       background: #02002F;
       color: white;
       font-family: "Inter", sans-serif;
-      overflow-x: hidden;
+    }
+
+    main {
+      flex: 1;
     }
 
     header {
@@ -47,14 +52,6 @@
       padding: 40px 20px;
     }
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 30px;
-      border-bottom: 2px solid white;
-      display: inline-block;
-      padding-bottom: 8px;
-    }
-
     form {
       background: white;
       color: black;
@@ -64,12 +61,10 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
-      box-shadow: 0 0 15px rgba(255,255,255,0.2);
     }
 
     label {
       font-weight: 600;
-      color: #1E1E1E;
     }
 
     input, textarea {
@@ -77,12 +72,6 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       width: 100%;
-      font-size: 16px;
-    }
-
-    textarea {
-      resize: none;
-      height: 100px;
     }
 
     button {
@@ -92,8 +81,6 @@
       border-radius: 4px;
       padding: 10px;
       cursor: pointer;
-      font-size: 16px;
-      transition: background 0.2s ease;
     }
 
     button:hover {
@@ -106,12 +93,7 @@
       text-align: center;
       padding: 25px 0;
       border-top: 1px solid #080300;
-      width: 100%;
-      position: relative;
-      bottom: 0;
-      left: 0;
       font-size: 16px;
-      margin-top: 60px;
     }
 
     footer p {
