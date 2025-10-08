@@ -63,6 +63,25 @@
       padding: 30px;
       margin-bottom: 50px;
       box-shadow: 0 0 15px rgba(255,255,255,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(255,255,255,0.2);
+    }
+
+    .card h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto 10px;
     }
 
     .card img {
@@ -122,26 +141,35 @@
   <main>
     <h1>Projects</h1>
 
-    <div class="card">
-      <h3>EPA ESA Web App</h3>
-      <p><strong>User Research Lead</strong></p>
-      <p>Led user research for a 3-person team during a summer internship to design a centralized web platform that helps farmers identify pesticide options based on region and regulations. Created an interactive Figma prototype, iterated through user feedback, and supported development with React Native and JavaScript to bridge design and implementation.</p>
-      <img src="images/EPA.png" alt="EPA ESA Web App Screenshot" />
-    </div>
+    <!-- EPA ESA Web App -->
+    <a href="https://www.figma.com/proto/YOUR_EPA_PROJECT_LINK" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <h3>EPA ESA Web App</h3>
+        <p><strong>User Research Lead</strong></p>
+        <p>Led user research for a 3-person team during a summer internship to design a centralized web platform that helps farmers identify pesticide options based on region and regulations. Created an interactive Figma prototype, iterated through user feedback, and supported development with React Native and JavaScript to bridge design and implementation.</p>
+        <img src="images/EPA.png" alt="EPA ESA Web App Screenshot" />
+      </div>
+    </a>
 
-    <div class="card">
-      <h3>Reef Guardian Game</h3>
-      <p><strong>System Architect</strong></p>
-      <p>Worked on a 5-person team to design and develop a Java side-scroller game. Served as system architect by creating UML diagrams and flowcharts, and contributed to gameplay logic, debugging, and optimization, blending technical work with narrative-driven design.</p>
-      <img src="images/reefgame.png" alt="Reef Guardian Game Screenshot" width="650" />
-    </div>
+    <!-- Reef Guardian Game -->
+    <a href="https://github.com/madi6116/ReefGuardianGame" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <h3>Reef Guardian Game</h3>
+        <p><strong>System Architect</strong></p>
+        <p>Worked on a 5-person team to design and develop a Java side-scroller game. Served as system architect by creating UML diagrams and flowcharts, and contributed to gameplay logic, debugging, and optimization, blending technical work with narrative-driven design.</p>
+        <img src="images/reefgame.png" alt="Reef Guardian Game Screenshot" width="650" />
+      </div>
+    </a>
 
-    <div class="card">
-      <h3>Engineering Labs</h3>
-      <p><strong>Developer</strong></p>
-      <p>Developed advanced Java applications through 12+ labs, gaining hands-on experience with object-oriented programming, data structures, debugging, and core concepts like inheritance, polymorphism, and encapsulation.</p>
-      <img src="images/SJSU.png" alt="SJSU Engineering Labs Screenshot" />
-    </div>
+    <!-- Engineering Labs -->
+    <a href="https://github.com/madi6116/EngineeringLabs" target="_blank" style="text-decoration:none;color:inherit;">
+      <div class="card">
+        <h3>Engineering Labs</h3>
+        <p><strong>Developer</strong></p>
+        <p>Developed advanced Java applications through 12+ labs, gaining hands-on experience with object-oriented programming, data structures, debugging, and core concepts like inheritance, polymorphism, and encapsulation.</p>
+        <img src="images/SJSU.png" alt="SJSU Engineering Labs Screenshot" />
+      </div>
+    </a>
   </main>
 
   <footer>
