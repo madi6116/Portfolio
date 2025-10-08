@@ -57,14 +57,28 @@
       margin-bottom: 50px;
     }
 
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    a.card {
+      text-decoration: none;
+      color: inherit;
+      width: 350px;
+    }
+
     .card {
       background: linear-gradient(180deg, #0E0202 0%, #07017E 100%);
       border-radius: 12px;
       padding: 30px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       box-shadow: 0 0 15px rgba(255,255,255,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+      height: 100%;
     }
 
     .card:hover {
@@ -73,22 +87,23 @@
     }
 
     .card h3 {
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 10px;
     }
 
     .card p {
-      font-size: 18px;
+      font-size: 17px;
       line-height: 1.6;
-      max-width: 900px;
+      max-width: 90%;
       margin: 0 auto 10px;
     }
 
     .card img {
       display: block;
-      margin: 30px auto;
+      margin: 25px auto 10px;
       border-radius: 8px;
-      max-width: 90%;
+      max-width: 100%;
+      height: auto;
     }
 
     footer {
@@ -140,36 +155,49 @@
 
   <main>
     <h1>Projects</h1>
+    <div class="projects-grid">
 
-    <!-- EPA ESA Web App -->
-    <a href="" style="text-decoration:none;color:inherit;">
-      <div class="card">
+      <!-- EPA ESA Web App -->
+      <a href="https://www.figma.com/proto/YOUR_EPA_PROJECT_LINK" target="_blank" class="card">
         <h3>EPA ESA Web App</h3>
         <p><strong>User Research Lead</strong></p>
         <p>Led user research for a 3-person team during a summer internship to design a centralized web platform that helps farmers identify pesticide options based on region and regulations. Created an interactive Figma prototype, iterated through user feedback, and supported development with React Native and JavaScript to bridge design and implementation.</p>
         <img src="images/EPA.png" alt="EPA ESA Web App Screenshot" />
-      </div>
-    </a>
+      </a>
 
-    <!-- Reef Guardian Game -->
-    <a href="https://github.com/d2blepeace/CMPE-131-Term-Project/tree/master" target="_blank" style="text-decoration:none;color:inherit;">
-      <div class="card">
+      <!-- Reef Guardian Game -->
+      <a href="https://github.com/madi6116/ReefGuardianGame" target="_blank" class="card">
         <h3>Reef Guardian Game</h3>
         <p><strong>System Architect</strong></p>
         <p>Worked on a 5-person team to design and develop a Java side-scroller game. Served as system architect by creating UML diagrams and flowcharts, and contributed to gameplay logic, debugging, and optimization, blending technical work with narrative-driven design.</p>
-        <img src="images/reefgame.png" alt="Reef Guardian Game Screenshot" width="650" />
-      </div>
-    </a>
+        <img src="images/reefgame.png" alt="Reef Guardian Game Screenshot" />
+      </a>
 
-    <!-- Engineering Labs -->
-    <a href="https://github.com/madi6116/Java-Labs" target="_blank" style="text-decoration:none;color:inherit;">
-      <div class="card">
+      <!-- Engineering Labs -->
+      <a href="https://github.com/madi6116/EngineeringLabs" target="_blank" class="card">
         <h3>Engineering Labs</h3>
         <p><strong>Developer</strong></p>
         <p>Developed advanced Java applications through 12+ labs, gaining hands-on experience with object-oriented programming, data structures, debugging, and core concepts like inheritance, polymorphism, and encapsulation.</p>
-        <img src="images/SJSU.png" alt="SJSU Engineering Labs Screenshot" />
-      </div>
-    </a>
+        <img src="images/SJSU.png" alt="Engineering Labs Screenshot" />
+      </a>
+
+      <!-- Solar Panel Suitcase -->
+      <a href="#" target="_blank" class="card">
+        <h3>Solar Panel Suitcase</h3>
+        <p><strong>Project Lead</strong></p>
+        <p>Led a team of 5 to construct a solar panel suitcase used to provide sustainable light to underdeveloped regions in Africa. Our project supported a hospital’s operations by ensuring consistent lighting. Oversaw design, mechanical, and software components while delegating tasks based on expertise.</p>
+        <img src="images/Solar.png" alt="Solar Panel Suitcase Project" />
+      </a>
+
+      <!-- Autonomous Robot -->
+      <a href="#" target="_blank" class="card">
+        <h3>Autonomous Robot</h3>
+        <p><strong>Software Engineer</strong></p>
+        <p>Developed an autonomous robot integrating electrical, mechanical, and software systems. Designed and programmed navigation logic, coordinated sensors, and contributed to system integration. Nominated for the Youth Service Awards 2023 for excellence in STEM innovation and sustainability.</p>
+        <img src="images/Robot.png" alt="Autonomous Robot Project" />
+      </a>
+
+    </div>
   </main>
 
   <footer>
