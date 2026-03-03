@@ -418,7 +418,7 @@ export default function App() {
             onClick={() => scrollTo("home")}
             style={{ fontFamily: "'Space Mono', monospace", fontSize: "1.15rem", fontWeight: 700, color: "#00e5a0", cursor: "pointer", letterSpacing: "0.05em" }}
           >
-            MA_
+            M
           </div>
 
           {/* Desktop links */}
