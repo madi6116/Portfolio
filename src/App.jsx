@@ -430,8 +430,17 @@ export default function App() {
                 </button>
               </li>
             ))}
-          </ul>
-
+</ul>
+<a
+  href="/Madison_Ammirati_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none" }}
+>
+  <button className="primary-btn" style={{ padding: "8px 20px", fontSize: "0.82rem" }}>
+    Resume ↗
+  </button>
+</a>
           {/* Hamburger */}
           <button
             className="hamburger"
@@ -507,7 +516,8 @@ export default function App() {
               transition: "all 0.7s ease 0.55s",
             }}>
               <button className="primary-btn" onClick={() => scrollTo("projects")}>View Projects</button>
-              <button className="ghost-btn" onClick={() => scrollTo("contact")}>Contact Me</button>
+<button className="ghost-btn" onClick={() => scrollTo("contact")}>Contact Me</button>
+<a href="/Madison_Ammirati_Resume.pdf" target="_blank" rel="noopener noreferrer" className="ghost-btn" style={{ textDecoration: "none" }}>Resume ↗</a>
             </div>
           </div>
 
