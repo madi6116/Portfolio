@@ -537,7 +537,7 @@ export default function App() {
                 <img src="headshot.png" alt="Headshot" style={{ width: "100%", height: "100%", borderRadius: "50%" }} />
               </div>
               <p style={{ fontSize: "1.08rem", lineHeight: 1.85, color: "rgba(232,234,240,0.78)", maxWidth: "680px", fontWeight: 300 }}>
-                Motivated and detail-oriented aspiring Software Engineer seeking internship opportunities to leverage academic knowledge and gain hands-on experience. Highly adept at problem-solving, software development, and team collaboration, with a strong commitment to innovation and excellence.
+                Motivated and detail-oriented aspiring Software Engineer seeking internship opportunities to leverage academic knowledge and gain hands-on experience. Highly adept at problem-solving, software development, and team collaboration, with a strong commitment to innovation and excellence. Interested in roles that allow me to work on cybersecurity, software development, and UI/UX design, where I can contribute my skills and grow as a professional in the tech industry.
               </p>
               <div style={{ display: "flex", gap: "14px" }}>
                 <a href="https://www.linkedin.com/in/madison-ammirati/" target="_blank" rel="noopener noreferrer" className="social-btn"><LinkedInIcon /></a>
