@@ -1358,13 +1358,13 @@ export default function App() {
                 desc: "5-person team Java side-scroller game. Served as system architect creating UML diagrams and flowcharts, and contributed to gameplay logic, debugging, and optimization.",
                 link: "https://github.com/d2blepeace/CMPE-131-Term-Project",
                 tags: ["Java", "LibGDX", "UML"],
-                category: "Backend",
+                category: "Full Stack",
               },
               {
                 title: "Engineering Labs",
                 role: "Developer",
                 desc: "12+ advanced Java applications covering OOP, data structures, debugging, inheritance, polymorphism, and encapsulation.",
-                link: "https://github.com/madi6116/EngineeringLabs",
+                link: "https://github.com/madi6116/Java-Labs",
                 tags: ["Java", "OOP", "Data Structures"],
                 category: "Backend",
               },
@@ -1374,7 +1374,7 @@ export default function App() {
                 desc: "Led a team of 5 to build a solar panel suitcase providing sustainable lighting to underdeveloped regions in Africa, supporting a hospital's operations.",
                 link: "#",
                 tags: ["Hardware", "Leadership", "Sustainability"],
-                category: "Backend",
+                category: "Engineering",
               },
               {
                 title: "Autonomous Robot",
@@ -1382,7 +1382,7 @@ export default function App() {
                 desc: "Autonomous robot integrating electrical, mechanical, and software systems. Nominated for the Youth Service Awards 2023 for excellence in STEM innovation and sustainability.",
                 link: "https://www.linkedin.com/feed/update/urn:li:activity:7251777779870904320",
                 tags: ["C++", "Sensors", "Robotics"],
-                category: "Backend",
+                category: "Engineering",
               },
               {
                 title: "Edubase",
@@ -1390,7 +1390,40 @@ export default function App() {
                 desc: "Designed application interfaces in Figma and translated them into FXML views integrated with Java controllers. Built a CRUD-based database app to store, search, edit, and manage student records.",
                 link: "#",
                 tags: ["Figma", "SQL", "JavaFX"],
-                category: "Full Stack",
+                category: "Frontend",
+              },
+              {
+                title: "Firmware Regression", 
+                role: "Software Engineer",
+                desc: "Developed a python project that implements a regression testing framework for simulated firmware data. It’s designed to automatically verify that a set of expected register values match the actual output from a firmware dump ",
+                link: "https://github.com/madi6116/Firmware-Regression",
+                tags: ["Python", "Automation", "Testing"],
+                category: "Backend",
+              },
+              {
+                title: "Snake Game",
+                role: "Developer",
+                desc: "Classic snake game built in Python includes basic game mechanics.",
+                link: "https://github.com/madi6116/Snake-Game",
+                tags: ["Python", "Game Development"],
+                category: "Backend",
+              },
+              {
+                title: "SMTP Lab",
+                role: "Developer",
+                desc: "I created a Python implementation of an SMTP client to better understand how email communication works at the protocol level. Instead of using built-in libraries like smtplib, I used raw sockets to manually establish a connection with an SMTP server and perform the full SMTP handshake. My program sends commands such as HELO, MAIL FROM, RCPT TO, DATA, and QUIT, while displaying the server’s responses at each step. This project helped me gain hands-on experience with TCP socket programming and a deeper understanding of how the SMTP protocol functions behind the scenes. Using a base code from my class.",
+                link: "https://github.com/madi6116/SMTP-Lab",
+                tags: ["Python", "TCP/IP", "Socket Programming"],
+                category: "Backend",
+            
+              },
+              {
+                title: "Shannon Lo's Campaign Website for AS Vice President of SJSU",
+                role: "Designer & Developer",
+                desc: "Designed and developed a campaign website for Shannon Lo's run for AS Vice President of SJSU. Created a vibrant, user-friendly site using React and Figma to engage voters and showcase her platform.",
+                link: "https://github.com/madi6116/shannon-campaign",
+                tags: ["React", "Figma", "Web Design"],
+                category: "Frontend",
               },
               {
                 title: "Campus Essentials Hub",
@@ -1435,6 +1468,12 @@ export default function App() {
                 bg: "rgba(167,139,250,0.08)",
                 emoji: "🎨",
               },
+              Engineering: {
+                color: "#38bdf8",
+                border: "rgba(56,189,248,0.3)",
+                bg: "rgba(56,189,248,0.08)",
+                emoji: "🔧" ,
+              },
             };
 
             const projectCategories = [
@@ -1443,6 +1482,7 @@ export default function App() {
               "Backend",
               "Full Stack",
               "Design",
+              "Engineering",
             ];
             const [activeFilter, setActiveFilter] = useState("All");
             const [animKey, setAnimKey] = useState(0);
