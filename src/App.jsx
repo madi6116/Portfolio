@@ -1411,8 +1411,8 @@ export default function App() {
               {
                 title: "SMTP Lab",
                 role: "Developer",
-                desc: "I created a Python implementation of an SMTP client to better understand how email communication works at the protocol level. Instead of using built-in libraries like smtplib, I used raw sockets to manually establish a connection with an SMTP server and perform the full SMTP handshake. My program sends commands such as HELO, MAIL FROM, RCPT TO, DATA, and QUIT, while displaying the server’s responses at each step. This project helped me gain hands-on experience with TCP socket programming and a deeper understanding of how the SMTP protocol functions behind the scenes. Using a base code from my class.",
-                link: "https://github.com/madi6116/SMTP-Lab",
+                desc: "I built a Python SMTP client using raw sockets to manually implement the SMTP protocol and send emails without using high-level libraries using a starter code for my computer networks class.",
+                link: "https://github.com/madi6116/SMTP-Lab-3",
                 tags: ["Python", "TCP/IP", "Socket Programming"],
                 category: "Backend",
             
