@@ -892,26 +892,35 @@ export default function App() {
               }}
             >
               <div
-                style={{
-                  width: "100px",
-                  height: "100px",
-                  borderRadius: "50%",
-                  background: "linear-gradient(135deg, #00e5a0, #0077ff)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "2.6rem",
-                  boxShadow: "0 0 50px rgba(0,229,160,0.22)",
-                  flexShrink: 0,
-                  animation: "float 4s ease-in-out infinite",
-                }}
-              >
-                <img
-                  src="headshot.jpg"
-                  alt="Headshot"
-                   style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover", objectPosition: "center top" }}
-                />
-              </div>
+  style={{
+    width: "100px",
+    height: "100px",
+    borderRadius: "50%",
+    background: "linear-gradient(135deg, #00e5a0, #0077ff)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    boxShadow: "0 0 50px rgba(0,229,160,0.22)",
+    flexShrink: 0,
+    animation: "float 4s ease-in-out infinite",
+    overflow: "hidden", 
+  }}
+>
+  <img
+    src="headshot.jpg"
+    alt="Headshot"
+    style={{ 
+      width: "100%", 
+      height: "100%", 
+      borderRadius: "50%", 
+      objectFit: "cover", 
+      objectPosition: "center 15%",
+      transform: "scale(2)",
+      transformOrigin: "center 40%",
+      marginLeft: "8%",
+    }}
+  />
+      </div>
               <p
                 style={{
                   fontSize: "1.08rem",
