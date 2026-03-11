@@ -907,7 +907,7 @@ export default function App() {
                 }}
               >
                 <img
-                  src="headshot.png"
+                  src="headshot.jpg"
                   alt="Headshot"
                    style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover", objectPosition: "center top" }}
                 />
