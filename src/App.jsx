@@ -166,7 +166,7 @@ const experience = [
     link: "https://www.gdots.com"
   },
   {
-    
+
     company: "IAU San Jose",
     role: "Web Developer",
     desc: "Created and maintaining a website for Internation American University's San Jose Campus with React, showcasing programs, events, and resources. Incooporated Stripe for payments, Supabase for applications, and Ionos VPS for hosting. Made sure the design was compliant with IAU standards.",
@@ -1304,31 +1304,13 @@ export default function App() {
               <Reveal key={exp.company} delay={i * 0.1} href={exp.link}>
                 <div className="card" style={{ padding: "28px 32px" }}>
                   <div
-                    className="exp-card-inner"
-                    style={{
-                      display: "flex",
-                      alignItems: "flex-start",
-                      gap: "22px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        width: "52px",
-                        height: "52px",
-                        borderRadius: "12px",
-                        flexShrink: 0,
-                        background:
-                          "linear-gradient(135deg, rgba(0,229,160,0.12), rgba(0,119,255,0.12))",
-                        border: "1px solid rgba(0,229,160,0.18)",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontSize: "1.5rem",
-                      }}
-                    >
-                      {exp.icon}
-                    </div>
-                    <div style={{ flex: 1 }}>
+                        className="exp-card-inner"
+                        style={{
+                          display: "flex",
+                          alignItems: "flex-start",
+                        }}
+                      >
+                        <div style={{ flex: 1 }}>
                       <div
                         style={{
                           display: "flex",
