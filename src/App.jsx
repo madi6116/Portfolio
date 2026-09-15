@@ -160,7 +160,7 @@ function SectionHeading({ children }) {
 // ── Data ────────────────────────────────────────────────────────────
 const experience = [
   {
-  company: "General Dynamics Ordenance and Tactical Systems",
+  company: "General Dynamics Ordnance and Tactical Systems",
     role: "Material Management Partner I",
     desc: "Conducted inventory counts, identified record discrepancies, and coordinated with departments to maintain accurate material information.",
     link: "https://www.gdots.com"
