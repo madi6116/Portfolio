@@ -166,6 +166,7 @@ const experience = [
     link: "https://www.gdots.com"
   },
   {
+    
     company: "IAU San Jose",
     role: "Web Developer",
     desc: "Created and maintaining a website for Internation American University's San Jose Campus with React, showcasing programs, events, and resources. Incooporated Stripe for payments, Supabase for applications, and Ionos VPS for hosting. Made sure the design was compliant with IAU standards.",
