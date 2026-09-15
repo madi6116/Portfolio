@@ -160,8 +160,13 @@ function SectionHeading({ children }) {
 // ── Data ────────────────────────────────────────────────────────────
 const experience = [
   {
+  company: "General Dynamics Ordenance and Tactical Systems",
+    role: "Material Management Partner I",
+    desc: "Conducted inventory counts, identified record discrepancies, and coordinated with departments to maintain accurate material information.",
+    link: "https://www.gdots.com"
+  },
+  {
     company: "IAU San Jose",
-    icon: "🎓",
     role: "Web Developer",
     desc: "Created and maintaining a website for Internation American University's San Jose Campus with React, showcasing programs, events, and resources. Incooporated Stripe for payments, Supabase for applications, and Ionos VPS for hosting. Made sure the design was compliant with IAU standards.",
     link: "https://sj.iaula.edu",
@@ -169,28 +174,24 @@ const experience = [
   {
     company: "Best Buy",
     role: "Geek Squad Consultation Agent",
-    icon: "🔧",
     desc: "Diagnosed and resolved hardware, software, and network issues across Windows, macOS, and mobile systems. Provided technical support for OS reinstalls, driver updates, malware removal, and data recovery while maintaining clear communication with customers.",
     link: "https://www.bestbuy.com/site/electronics/services/pcmcat1528819595254.c",
   },
   {
     company: "Firefox Student Ambassador",
     role: "Student Ambassador",
-    icon: "🦊",
     desc: "Helped launch the first Firefox Student Ambassador program on campus, building brand presence through creative events. Designed a compliant website in coordination with Mozilla's legal team and organized case competitions, themed promotions, and giveaways.",
     link: "https://soloist.ai/responsiblecomputingclub",
   },
   {
     company: "Responsible Computing Club",
     role: "Lead Industry Mozilla Ambassador",
-    icon: "💡",
     desc: "Led initiatives to promote responsible computing and ethical technology use by planning and executing 7+ events each semester. Managed a team of 4 to coordinate speaker events and workshops with industry professionals.",
     link: "https://www.instagram.com/rcc.sjsu",
   },
   {
     company: "IDEAs Entrepreneurship Club",
     role: "Vice President",
-    icon: "🚀",
     desc: "Judged for SJ Hacks with 30+ applications, organized events that boosted membership by 5%, and supported executive board growth through recruitment, interviews, and team coordination.",
     link: "https://www.instagram.com/ideas.sjsu/",
   },
